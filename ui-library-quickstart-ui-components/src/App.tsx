@@ -20,7 +20,7 @@ function CompletedComponentsApp(): JSX.Element {
   return (
     <FluentThemeProvider>
       <Stack horizontal horizontalAlign="space-evenly" styles={stackStyle}>
-        <CallingComponents />
+        {/* <CallingComponents /> */}
         <ChatComponents />
       </Stack>
     </FluentThemeProvider>

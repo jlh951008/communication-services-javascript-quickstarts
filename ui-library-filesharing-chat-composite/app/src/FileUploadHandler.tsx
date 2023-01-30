@@ -39,7 +39,7 @@ const fileUploadHandler: FileUploadHandler = async (
     try {
       const response = await axios.request({
         method: "post",
-        url: `/api/UploadFileToAzureBlobStore?filename=${uniqueFileName}`,
+        url: `http://localhost:7071/api/UploadFileToAzureBlobStore?filename=${uniqueFileName}`,
         data: formData,
         headers: {
           "Content-Type": `multipart/form-data`,

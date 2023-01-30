@@ -2,7 +2,7 @@
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "node",
-    "azureStorageConnectionString": "<CONNECTION_STRING>"
+    "azureStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=realestatestorage;AccountKey=3pvdbQHLhDM+x4cnG414urEFjtyybbpZAtWHFMG9CO0nQB+RayiDyWfJ8zQ+MzGdqTwOmsjd/yBW3On4NThX9Q==;EndpointSuffix=core.windows.net"
   },
   "Host": {
     "LocalHttpPort": 7071,

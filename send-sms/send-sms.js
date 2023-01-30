@@ -2,15 +2,15 @@ const {SmsClient} = require('@azure/communication-sms');
 
 // This code demonstrates how to fetch your connection string
 // from an environment variable.
-const connectionString = process.env['COMMUNICATION_SERVICES_CONNECTION_STRING'];
+const connectionString = 'endpoint=https://realestatecsresource.communication.azure.com/;accesskey=aI0GndKEkHwgxJndj7XSnNEEfXqOZMQi49azz27h33Swgfdau/4WcK5YBqIUeMiaUc1/c5xVmUcMfNwMdlpvyA==';
 
 // Instantiate the SMS client
 const smsClient = new SmsClient(connectionString);
 
 async function main(){
     const sendResults = await smsClient.send({
-      from: "<from-phone-number>",
-      to: ["<to-phone-number-1>", "<to-phone-number-2>"],
+      from: "+18883545522",
+      to: ["+8615651851639"],
       message: "Hello World 👋🏻 via SMS"
       });
     

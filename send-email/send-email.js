@@ -1,8 +1,8 @@
 const { EmailClient } = require("@azure/communication-email");
 
-const connectionString = "<ACS_CONNECTION_STRING>";
+const connectionString = "endpoint=https://realestatecsresource.communication.azure.com/;accesskey=aI0GndKEkHwgxJndj7XSnNEEfXqOZMQi49azz27h33Swgfdau/4WcK5YBqIUeMiaUc1/c5xVmUcMfNwMdlpvyA==";
 const client = new EmailClient(connectionString);
-const sender = "<SENDER_EMAIL>";
+const sender = "DoNotReply@2e6b0cfc-424f-4090-b6e2-10a2d7cc9a62.azurecomm.net";
 const emailContent = {
   subject: "Send email quick start test- JS sample",
   plainText: "Test Email from JS Send Email Sample Application\n\n This email is part of testing of email communication service. \\n Best wishes",
@@ -10,7 +10,7 @@ const emailContent = {
 };
 const toRecipients = {
   to: [
-    { email: "<RECIPIENT_EMAIL>", displayName: "<RECIPIENT_DISPLAY_NAME>" },
+    { email: "isaacji@microsoft.com", displayName: "DoNotReply" },
   ],
 };
 
